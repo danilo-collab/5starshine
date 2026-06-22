@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-[1180px] grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-[1.5fr_1fr_1fr_1.1fr_1fr] lg:gap-[34px]">
         {/* Brand */}
         <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-          <Image src="/assets/5star-logo.png" alt="5 Star Shine Auto Detailing" width={160} height={78} className="mb-3.5 block h-16 w-auto sm:h-[78px]" />
+          <Image src="/assets/5star-logo.png" alt="5 Star Shine Auto Detail LLC" width={160} height={78} className="mb-3.5 block h-16 w-auto sm:h-[78px]" />
           <p className="mb-4 max-w-[230px] font-barlow text-[13px] leading-[1.55] text-text-dim">
             Professional auto detailing that restores, protects, and keeps your vehicle looking its absolute best.
           </p>
@@ -47,7 +47,7 @@ export default function Footer() {
         <div>
           <div className="mb-4 font-archivo text-[13px] font-bold uppercase tracking-[0.14em] text-accent">Our Services</div>
           <div className="flex flex-col gap-2.5">
-            {["Mobile Detailing", "Ceramic Coating", "Paint Correction", "Interior Detailing", "Maintenance Wash", "And More"].map((s) => (
+            {["Mobile Detailing", "Ceramic Coating", "Paint Correction", "Interior Detailing", "Pressure Washing", "And More"].map((s) => (
               <span key={s} className="font-barlow text-sm text-text-muted">{s}</span>
             ))}
           </div>
@@ -57,17 +57,17 @@ export default function Footer() {
         <div>
           <div className="mb-4 font-archivo text-[13px] font-bold uppercase tracking-[0.14em] text-accent">Contact Us</div>
           <div className="flex flex-col gap-[13px]">
-            <a href="tel:6025550198" className="flex items-center gap-2.5 font-barlow text-sm text-text-muted transition-colors hover:text-white">
+            <a href="tel:7654385513" className="flex items-center gap-2.5 font-barlow text-sm text-text-muted transition-colors hover:text-white">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>
-              (602) 555-0198
+              (765) 438-5513
             </a>
-            <a href="mailto:info@5starshine.com" className="flex items-center gap-2.5 font-barlow text-sm text-text-muted transition-colors hover:text-white">
+            <a href="mailto:info@5starshineautodetail.com" className="flex items-center gap-2.5 font-barlow text-sm text-text-muted transition-colors hover:text-white">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-              info@5starshine.com
+              info@5starshineautodetail.com
             </a>
             <div className="flex items-start gap-2.5 font-barlow text-sm leading-[1.4] text-text-muted">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 flex-none" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-              <span>Phoenix, AZ<br />Surrounding Areas</span>
+              <span>Tampa, FL<br />Surrounding Areas</span>
             </div>
           </div>
         </div>
@@ -75,8 +75,8 @@ export default function Footer() {
         {/* Hours */}
         <div>
           <div className="mb-4 font-archivo text-[13px] font-bold uppercase tracking-[0.14em] text-accent">Hours</div>
-          <div className="mb-1.5 font-barlow text-sm leading-normal text-text-muted">Mon - Sat: 8AM - 6PM</div>
-          <div className="mb-[18px] font-barlow text-sm leading-normal text-text-muted">Sun: By Appointment</div>
+          <div className="mb-1.5 font-barlow text-sm leading-normal text-text-muted">Mon - Sun: 8AM - 9PM</div>
+          <div className="mb-[18px] font-barlow text-sm leading-normal text-text-muted">Open 7 Days a Week</div>
           <div className="inline-flex items-center gap-[9px] rounded-[9px] border border-cta-border px-[13px] py-[9px]">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="flex-none" aria-hidden="true">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>

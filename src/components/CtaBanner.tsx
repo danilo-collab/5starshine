@@ -21,17 +21,17 @@ export default function CtaBanner() {
         </div>
 
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-3.5">
-          <a href="tel:6025550198" className="btn-glow inline-flex items-center justify-center gap-2.5 rounded-[9px] bg-accent px-[26px] py-[15px] font-barlow text-[15px] font-bold text-bg">
+          <a href="tel:7654385513" className="btn-glow inline-flex items-center justify-center gap-2.5 rounded-[9px] bg-accent px-[26px] py-[15px] font-barlow text-[15px] font-bold text-bg">
             Book Now
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m13 5 7 7-7 7" /></svg>
           </a>
-          <a href="tel:6025550198" className="inline-flex items-center justify-center gap-[11px] rounded-[9px] border border-border-btn bg-transparent px-[22px] py-[11px] font-barlow text-sm font-semibold text-white transition-colors hover:border-accent">
+          <a href="tel:7654385513" className="inline-flex items-center justify-center gap-[11px] rounded-[9px] border border-border-btn bg-transparent px-[22px] py-[11px] font-barlow text-sm font-semibold text-white transition-colors hover:border-accent">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z" />
             </svg>
             <span className="flex flex-col leading-[1.2]">
               <span className="font-bold">Call Today</span>
-              <span className="text-[12.5px] text-text-cta">(602) 555-0198</span>
+              <span className="text-[12.5px] text-text-cta">(765) 438-5513</span>
             </span>
           </a>
         </div>

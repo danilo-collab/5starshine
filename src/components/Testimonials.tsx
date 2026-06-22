@@ -27,17 +27,17 @@ const reviews = [
   {
     text: "“My car looks better than the day I bought it. The attention to detail is unmatched. Highly recommend!”",
     name: "Jason M.",
-    location: "Phoenix, AZ",
+    location: "Tampa, FL",
   },
   {
     text: "“The ceramic coating made a massive difference. Incredible shine and water just rolls right off!”",
     name: "Sarah T.",
-    location: "Scottsdale, AZ",
+    location: "Brandon, FL",
   },
   {
     text: "“Professional, on time, and worth every penny. 5 Star Shine is the real deal.”",
     name: "Mike R.",
-    location: "Mesa, AZ",
+    location: "Riverview, FL",
   },
 ];
 
@@ -45,8 +45,19 @@ export default function Testimonials() {
   return (
     <section id="reviews" className="mx-auto max-w-[1180px] px-5 pb-10 pt-6 sm:px-7 md:pb-[50px] md:pt-[30px]">
       <ScrollReveal>
-        <div className="mb-[26px] text-center font-archivo text-xs font-bold uppercase tracking-[0.22em] text-accent">
+        <div className="mb-2 text-center font-archivo text-xs font-bold uppercase tracking-[0.22em] text-accent">
           What Our Clients Say
+        </div>
+        <div className="mb-[26px] flex items-center justify-center gap-2">
+          <div className="flex gap-[2px]">
+            {[0, 1, 2, 3, 4].map((i) => (
+              <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="var(--color-accent)" stroke="none">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z" />
+              </svg>
+            ))}
+          </div>
+          <span className="font-barlow text-sm font-semibold text-white">5.0</span>
+          <span className="font-barlow text-sm text-text-muted">from 16 Google reviews</span>
         </div>
       </ScrollReveal>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-[18px] lg:grid-cols-3">

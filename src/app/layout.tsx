@@ -17,9 +17,9 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "5 Star Shine Auto Detailing | Premium Detailing & Ceramic Coating",
+  title: "5 Star Shine Auto Detail LLC | Mobile Detailing & Ceramic Coating | Tampa, FL",
   description:
-    "Professional auto detailing that restores, protects, and maintains your vehicle—inside and out. Mobile detailing, ceramic coating, paint correction in Phoenix, AZ.",
+    "Professional mobile auto detailing in Tampa, FL and surrounding areas. Ceramic coating, paint correction, interior detailing, and pressure washing. We come to you. Call (765) 438-5513.",
 };
 
 export default function RootLayout({

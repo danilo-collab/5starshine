@@ -17,7 +17,7 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-8 px-5 pb-12 pt-12 sm:px-7 md:gap-[30px] md:pb-[70px] md:pt-16 lg:grid-cols-2">
         <ScrollReveal>
-          <div className="font-archivo text-xs font-bold uppercase tracking-[0.22em] text-accent" style={{ marginBottom: "clamp(12px, 2vw, 18px)" }}>5 Star Shine Auto Detailing</div>
+          <div className="font-archivo text-xs font-bold uppercase tracking-[0.22em] text-accent" style={{ marginBottom: "clamp(12px, 2vw, 18px)" }}>5 Star Shine Auto Detail LLC</div>
           <h1 className="font-archivo font-extrabold leading-[1.02] tracking-tight" style={{ fontSize: "clamp(36px, 5vw, 58px)", marginBottom: "clamp(16px, 2vw, 22px)" }}>
             <span className="text-white">Premium Detailing</span><br />
             <span className="text-accent">That Brings Back the Shine</span>
