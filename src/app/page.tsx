@@ -11,14 +11,17 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-bg text-white">
+      <a href="#main-content" className="skip-to-content">Skip to content</a>
       <Header />
-      <Hero />
-      <MobileDetailing />
-      <CeramicCoating />
-      <Formula1051 />
-      <BeforeAfterSection />
-      <Testimonials />
-      <CtaBanner />
+      <main id="main-content">
+        <Hero />
+        <MobileDetailing />
+        <CeramicCoating />
+        <Formula1051 />
+        <BeforeAfterSection />
+        <Testimonials />
+        <CtaBanner />
+      </main>
       <Footer />
     </div>
   );

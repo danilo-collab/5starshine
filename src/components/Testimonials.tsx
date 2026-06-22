@@ -1,3 +1,5 @@
+import ScrollReveal from "./ScrollReveal";
+
 function Stars() {
   return (
     <div className="mb-3.5 flex gap-[3px]">
@@ -24,40 +26,44 @@ function Avatar() {
 const reviews = [
   {
     text: "“My car looks better than the day I bought it. The attention to detail is unmatched. Highly recommend!”",
-    name: "— Jason M.",
+    name: "Jason M.",
     location: "Phoenix, AZ",
   },
   {
     text: "“The ceramic coating made a massive difference. Incredible shine and water just rolls right off!”",
-    name: "— Sarah T.",
+    name: "Sarah T.",
     location: "Scottsdale, AZ",
   },
   {
     text: "“Professional, on time, and worth every penny. 5 Star Shine is the real deal.”",
-    name: "— Mike R.",
+    name: "Mike R.",
     location: "Mesa, AZ",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section id="reviews" className="mx-auto max-w-[1180px] px-7 pb-[50px] pt-[30px]">
-      <div className="mb-[26px] text-center font-archivo text-xs font-bold uppercase tracking-[0.22em] text-accent">
-        What Our Clients Say
-      </div>
-      <div className="grid grid-cols-3 gap-[18px]">
-        {reviews.map((r) => (
-          <div key={r.name} className="rounded-[13px] border border-border bg-bg-card p-[22px]">
-            <Stars />
-            <p className="mb-[18px] font-barlow text-[15px] leading-[1.55] text-text-review">{r.text}</p>
-            <div className="flex items-center gap-3">
-              <Avatar />
-              <div>
-                <div className="font-barlow text-sm font-bold text-white">{r.name}</div>
-                <div className="font-barlow text-[12.5px] text-text-dim">{r.location}</div>
+    <section id="reviews" className="mx-auto max-w-[1180px] px-5 pb-10 pt-6 sm:px-7 md:pb-[50px] md:pt-[30px]">
+      <ScrollReveal>
+        <div className="mb-[26px] text-center font-archivo text-xs font-bold uppercase tracking-[0.22em] text-accent">
+          What Our Clients Say
+        </div>
+      </ScrollReveal>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-[18px] lg:grid-cols-3">
+        {reviews.map((r, i) => (
+          <ScrollReveal key={r.name} delay={i + 1}>
+            <div className="card-hover rounded-[13px] border border-border bg-bg-card p-5 sm:p-[22px]">
+              <Stars />
+              <p className="mb-[18px] font-barlow text-[15px] leading-[1.55] text-text-review">{r.text}</p>
+              <div className="flex items-center gap-3">
+                <Avatar />
+                <div>
+                  <div className="font-barlow text-sm font-bold text-white">{r.name}</div>
+                  <div className="font-barlow text-[12.5px] text-text-dim">{r.location}</div>
+                </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </section>
