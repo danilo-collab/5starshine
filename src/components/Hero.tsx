@@ -3,7 +3,16 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden" style={{ background: "radial-gradient(120% 100% at 80% 30%, #1b1f1a 0%, #0d0f0c 45%, #0a0b0a 100%)" }}>
+    <section id="top" className="relative overflow-hidden bg-bg">
+      <Image
+        src="/assets/background-car.png"
+        alt=""
+        fill
+        className="pointer-events-none object-cover opacity-20"
+        priority
+        sizes="100vw"
+      />
+      <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(120% 100% at 80% 30%, rgba(27,31,26,0.85) 0%, rgba(13,15,12,0.9) 45%, rgba(10,11,10,0.95) 100%)" }} />
       <div className="pointer-events-none absolute inset-0" style={{ backgroundImage: "linear-gradient(90deg, rgba(184,224,0,0.06), transparent 30%), repeating-linear-gradient(90deg, rgba(255,255,255,0.015) 0 2px, transparent 2px 120px)" }} />
 
       <div className="relative mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-8 px-5 pb-12 pt-12 sm:px-7 md:gap-[30px] md:pb-[70px] md:pt-16 lg:grid-cols-2">
