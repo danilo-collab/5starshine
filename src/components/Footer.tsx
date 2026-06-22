@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-[1180px] grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-[1.5fr_1fr_1fr_1.1fr_1fr] lg:gap-[34px]">
         {/* Brand */}
         <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-          <Image src="/assets/5star-logo.png" alt="5 Star Shine Auto Detail LLC" width={160} height={78} className="mb-3.5 block h-16 w-auto sm:h-[78px]" />
+          <Link href="/"><Image src="/assets/5star-logo.png" alt="5 Star Shine Auto Detail LLC" width={160} height={78} className="mb-3.5 block h-16 w-auto sm:h-[78px]" /></Link>
           <p className="mb-4 max-w-[230px] font-barlow text-[13px] leading-[1.55] text-text-dim">
             Professional auto detailing that restores, protects, and keeps your vehicle looking its absolute best.
           </p>
@@ -31,12 +32,12 @@ export default function Footer() {
           <div className="mb-4 font-archivo text-[13px] font-bold uppercase tracking-[0.14em] text-accent">Quick Links</div>
           <nav className="flex flex-col gap-2.5" aria-label="Footer navigation">
             {[
-              { href: "#top", label: "Home" },
-              { href: "#mobile", label: "Services" },
-              { href: "#coating", label: "Coatings" },
-              { href: "#results", label: "Gallery" },
-              { href: "#reviews", label: "Reviews" },
-              { href: "#contact", label: "Contact" },
+              { href: "/", label: "Home" },
+              { href: "/#mobile", label: "Services" },
+              { href: "/#coating", label: "Coatings" },
+              { href: "/#results", label: "Gallery" },
+              { href: "/#reviews", label: "Reviews" },
+              { href: "/#contact", label: "Contact" },
             ].map((l) => (
               <a key={l.href} href={l.href} className="font-barlow text-sm text-text-muted transition-colors hover:text-white">{l.label}</a>
             ))}
