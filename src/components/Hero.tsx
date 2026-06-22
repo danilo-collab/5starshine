@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 export default function Hero() {
@@ -28,9 +29,15 @@ export default function Hero() {
         </ScrollReveal>
 
         <ScrollReveal delay={2} className="hidden lg:block">
-          <div className="flex h-[360px] flex-col items-center justify-center gap-2 rounded-[14px] border border-border bg-bg-card" style={{ backgroundImage: "repeating-linear-gradient(45deg, rgba(255,255,255,0.022) 0 12px, transparent 12px 24px)" }}>
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4a5044" strokeWidth="1.5"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="m3 9 4-3h10l4 3"/><circle cx="12" cy="13" r="3"/></svg>
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.12em] text-[#5a6052]">HERO — DETAILED CAR</span>
+          <div className="relative h-[360px] overflow-hidden rounded-[14px] border border-border">
+            <Image
+              src="/assets/hero.png"
+              alt="Premium detailed car with mirror-like finish"
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 1024px) 0vw, 50vw"
+            />
           </div>
         </ScrollReveal>
       </div>
