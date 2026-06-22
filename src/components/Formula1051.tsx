@@ -60,10 +60,15 @@ export default function Formula1051() {
               ))}
             </div>
 
-            <a href="#contact" className="btn-glow inline-flex items-center gap-[9px] rounded-lg bg-accent px-[22px] py-[13px] font-barlow text-sm font-bold text-bg">
-              Ask About Formula 1051
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a href="/formula-1051" className="btn-glow inline-flex items-center gap-[9px] rounded-lg bg-accent px-[22px] py-[13px] font-barlow text-sm font-bold text-bg">
+                Learn More
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </a>
+              <a href="#contact" className="inline-flex items-center gap-[9px] rounded-lg border border-border-btn px-[22px] py-[13px] font-barlow text-sm font-bold text-white transition-colors hover:border-accent">
+                Get a Quote
+              </a>
+            </div>
           </div>
         </div>
       </ScrollReveal>
